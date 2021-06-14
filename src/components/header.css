@@ -1,0 +1,37 @@
+.computerhead{
+    width: 1400px;
+    height: 440px;
+    flex: row;
+    
+    display: inline-flex;
+    float: left;
+    opacity: 0.4;    
+}
+
+
+.black {
+    background-color: black;
+    margin-top: 30px;
+    width: 1400px;
+    height: 440px;
+}
+
+.CS {
+    position: absolute;
+    color: white;
+    top: 320px;
+    left: 200px;
+    bottom: 107px;
+    font-size: 42px;
+}
+
+.info {
+    color: white;
+    top: 371px;
+    left: 200px;
+    bottom: 107px;
+    position: absolute;
+    font-family: IBM Plex Sans;
+
+}
+
