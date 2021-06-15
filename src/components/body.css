@@ -1,21 +1,9 @@
-.links {
-    justify-content: space-between;
-    align-content: space-between;
-    left: 200px;
-    padding-left: 10px;
+div.container{
+    margin-left: 50px;
+    float: right;
+   
 }
 
-.links > a {
-    padding-right: 10px;
+.pl-7{
+    padding:  50px !important;
 }
-
-.navigationSpace {
-    padding: 21px;
-}
-
-.navitem {
-    padding-left: 50px;
-    left: 50px;
-    justify-content: center;
-}
-

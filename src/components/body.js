@@ -7,25 +7,34 @@ import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 function Body() {
-    return (
+  return (
 
-        <div className="list">
-        <ul class="nav">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Active</a>
+
+  
+    <nav class="navbar navbar-expand-lg ">
+    <div class="container ml-lg-5" >
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">ALL POSTS(32) <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="#">ARTICLE</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="#">EVENT</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
+          <a class="nav-link disabled" href="#">EDUCATION</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">EDUCATION</a>
         </li>
       </ul>
-      </div>
-    )
+    </div>
+  </nav>
+
+   
+  )
 }
 
 
