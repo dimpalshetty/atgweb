@@ -5,11 +5,13 @@ import '../components/navbar.css';
 import SearchIcon from "@material-ui/icons/Search";
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 import { FaSistrix } from 'react-icons/fa';
+import { Container } from '@material-ui/core';
 
 function Navbar() {
     return (
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <img src={whole} className="icon" />
+        <nav class="navbar navbar-expand-lg ">
+        <div class="container">
+            <img src={whole} className="icon" /> 
             {/* <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button> */}
@@ -29,6 +31,7 @@ function Navbar() {
                 </form>
 
                 <p className="createacc">Create Account. <a href ="#" className="free">Its Free! <ArrowDropDownIcon className="arrow" /></a></p>
+            </div>
             </div>
         </nav>
 
