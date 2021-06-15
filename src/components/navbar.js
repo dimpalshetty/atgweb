@@ -9,33 +9,35 @@ import { Container } from '@material-ui/core';
 
 function Navbar() {
     return (
-        <nav class="navbar navbar-expand-lg ">
-        <div class="container">
-            <img src={whole} className="icon" /> 
-            {/* <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button> */}
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-             
+        <nav class="navbar navbar-expand-md ">
+            <div class="container-fluid">
 
-          
-                
-                
-                <form class="form-inline  my-lg-0">
+                <img src={whole} className="icon" />
 
-                    <FaSistrix className="searchicon"/>
-                    <input class="form-control mr-sm-2"  type="search " placeholder="Search for your ATG Groups" aria-label="Search " />
-                   
 
-                </form>
+                <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+                    <div class="mx-auto order-0">
+                        <form class="form-inline  my-lg-0">
 
-                <p className="createacc">Create Account. <a href ="#" className="free">Its Free! <ArrowDropDownIcon className="arrow" /></a></p>
-            </div>
+                            <FaSistrix className="searchicon" />
+                            <input class="form-control mr-sm-2" type="search " placeholder="Search for your ATG Groups" aria-label="Search " />
+                        </form>
+                    </div>
+                </div>
+                <div class="navbar-collapse collapse w-100 order-3 dual-collapse2" id="links">
+                    <div class="navbar-nav ms-auto">
+                        
+                        <p className="para">Create Account. <a className="Dropdown" href="#" >Its Free <ArrowDropDownIcon className="arrow" /></a> </p>   
+                        
+
+                    </div>
+                </div>
             </div>
         </nav>
 
-     
+
+
     )
 }
 
