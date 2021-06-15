@@ -12,9 +12,8 @@ function Navbar() {
 
         <nav class="navbar navbar-expand-md ">
             <div class="container-fluid">
-
-                <img src={whole} className="icon" />
-
+            <div class="navbar-collapse collapse w-100 order-4 order-md-0 dual-collapse2">
+                <img src={whole} className="icon" /> </div>
 
                 <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
                     <div class="mx-auto order-0">

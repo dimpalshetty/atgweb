@@ -1,1 +1,96 @@
 
+.PostLink{
+    padding-left: 200px;
+}
+
+.nav-link {
+    color: black !important; 
+
+}
+
+
+  
+
+.active a {
+
+    background-color: green !important;
+  
+
+  }
+
+
+
+  .container {
+    margin-top: 32px;
+  }
+  
+  
+  /* tab content */
+  #exTab1 .tab-content {
+    color : white;
+    background-color: #EF476F;
+  }
+  
+  #exTab1 .tab-pane {
+     padding : 5px 15px;
+  }
+  
+  /* my attempt at individual tab styling */
+  #exTab1 .tab-content > [id='1a']  {
+      background-color: #EF476F;
+  }
+  
+  #exTab1 .tab-content > [id='2a']  {
+      background-color: #FF6663;
+  }
+  
+  #exTab1 .tab-content > [id='3a']  {
+      background-color: #FFD166;
+  }
+  
+  
+  
+  /* pills styling */
+  #exTab1 .nav-pills > li > a {
+    border-radius: 0;
+  }
+  div#exTab1.container {
+      padding-bottom: 64px;
+  }
+  li.active {
+      background: #E9C46A;
+  }
+  .nav-pills > li > a.adopt-tab {
+      color: #EF476F;
+      border: none;
+  }
+  .nav-pills > li.active > a.adopt-tab {
+      background-color: #EF476F;
+      color: white;
+      border: none;
+  }
+  .nav-pills > li > a.donate-tab {
+      color: #FF6663;
+      border: none;
+  }
+  .nav-pills > li.active > a.donate-tab {
+      background-color: #FF6663;
+      border: none;
+  }
+  .nav-pills > li > a.join-tab {
+      color: #FFD166;
+      border: none;
+  }
+  .nav-pills > li.active > a.join-tab {
+      background-color: #FFD166;
+      border: none;
+  }
+  
+  
+   
+
+
+
+
+
+  

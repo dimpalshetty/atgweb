@@ -10,29 +10,32 @@ function Body() {
   return (
 
 
-  
-    <nav class="navbar navbar-expand-lg ">
-    <div class="container ml-lg-5" >
+<div className="PostLink">
+ <nav class="navbar navbar-expand-lg pl-md-5 ">
+    <div class="container" id="link">
       <ul class="navbar-nav">
-        <li class="nav-item active">
+        <li class="nav-item ">
           <a class="nav-link" href="#">ALL POSTS(32)</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">ARTICLE</a>
+          <a class="nav-link" href="##">ARTICLE</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">EVENT</a>
+          <a class="nav-link" href="##">EVENT</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" href="#">EDUCATION</a>
+          <a class="nav-link "  href="##">EDUCATION</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" href="#">EDUCATION</a>
+          <a class="nav-link " href="##">JOB</a>
         </li>
       </ul>
     </div>
-  </nav>
-
+  </nav> 
+  
+</div> 
+  
+    
    
   )
 }
