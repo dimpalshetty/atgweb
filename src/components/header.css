@@ -8,6 +8,32 @@
     opacity: 0.4;    
 }
 
+.container-fluid {
+    padding-left: 0 !important;
+
+}
+
+
+@media only screen and (max-width: 300px and ) {
+
+   
+    .computerhead {
+        height: 50vh;
+        width: 50wv;
+    }
+
+    
+
+    .container-fluid {
+        padding-left: 0;
+    
+    }
+
+    
+}
+
+
+
 
 .black {
     background-color: black;

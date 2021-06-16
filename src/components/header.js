@@ -2,11 +2,12 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import header from '../images/header.png';
 import '../components/header.css';
+import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 function Header() {
     return (
         
-        <div className="imagehead">
+        <div class="container-fluid">
         <div className="black">
             <img src={header} className="computerhead" />
             <h1 className="CS">Computer Engineering</h1>

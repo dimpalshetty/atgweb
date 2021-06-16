@@ -1,4 +1,4 @@
-
+/* 
 .PostLink{
     padding-left: 200px;
 
@@ -63,6 +63,11 @@
     padding: 0px 0 5px 0px;
   }
 
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
 
   .content hr {
     width: 80%;
@@ -120,6 +125,55 @@
 
 
 
+
+
+   */
+
+
+   .PostLink{
+    padding-left: 200px;
+    padding-top: 3px;
+   }
+
+
+  #hello {
+    border-radius: 10px ;
+    background-color: blueviolet;
+  }
+
+
+  .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    border-bottom: 2px solid black !important;
+    border-right: 0px white!important;
+    border-left: 0px white!important;
+    border-top: 0px white!important;
+  }
+
+
+  .feed {
+    /* flex-direction: column; */
+    width: 60vw;
+  }
+
+  .btn-sm{
+    width: 10px;
+  }
+
+  .main {
+    /* flex-direction: row; */
+  }
+
+
+  .sideMenu {
+    /* flex-direction: column; */
+    width: 10vw;
+  }
+
+
+  .row>* {
+    width: 70% !important;
+    flex: 1;
+  }
 
 
   

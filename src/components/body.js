@@ -6,171 +6,79 @@ import SearchIcon from "@material-ui/icons/Search";
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 import GroupAddIcon from '@material-ui/icons/GroupAdd';
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import useScript from '../useScript';
+import { Tab } from 'react-bootstrap';
+import Tabs from 'react-bootstrap/Tabs';
+
+
+
+
 
 function Body() {
-
-  const [toggleState, setToggleState] = useState(1);
-
-  const toggleTab = (index) => {
-    setToggleState(index);
-  };
+  const [key, setKey] = useState('home');
 
   return (
+    <div class="container">
+      <div class="row">
 
+        <div class="col col-auto" >
+          <div className="feed">
+            <div className="PostLink">
+              <Tabs
+                id="controlled-tab-example "
+                className="hello"
+                activeKey={key}
+                onSelect={(k) => setKey(k)}
+              >
+                <Tab eventKey="home" title="All Posts(32)">
+                <div class="card" >
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
+  </div>
+</div>
+                </Tab>
+                <Tab eventKey="profile" title="Events">
+                  Hi
+                </Tab>
+                <Tab eventKey="articles" title="Articles">
+                  Hi
+                </Tab>
+                <Tab eventKey="edu" title="Education">
+                  Hi
+                </Tab>
+                <Tab eventKey="job" title="Job">
+                  Hi
+                </Tab>
+              </Tabs>
 
-    <div className="PostLink">
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
 
-      <div className="bloc-tabs">
-        <a
-          className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
-          onClick={() => toggleTab(1)}
-        >
-          All Posts(32)
-        </a>
-        <a
-          className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
-          onClick={() => toggleTab(2)}
-        >
-          Tab 2
-        </a>
-        <a
-          className={toggleState === 3 ? "tabs active-tabs" : "tabs"}
-          onClick={() => toggleTab(3)}
-        >
-          Tab 3
-        </a>
-        <a
-          className={toggleState === 4 ? "tabs active-tabs" : "tabs"}
-          onClick={() => toggleTab(4)}
-        >
-          Tab 4
-        </a>
-        <a
-          className={toggleState === 5 ? "tabs active-tabs" : "tabs"}
-          onClick={() => toggleTab(5)}
-        >
-          Tab 5
-        </a>
-
-        <div class="btn-group">
-  <button type="button" class="btn btn-light dropdown-toggle btn-sm" data-bs-toggle="dropdown static" aria-expanded="false">
-    Action
+          <div class="row">
+          <div class="btn-group">
+  <button class="btn btn-light btn-block dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+   Write A Post 
   </button>
-  <ul class="dropdown-menu ">
-    <li><a class="dropdown-item" href="#">Action</a></li>
-    <li><a class="dropdown-item" href="#">Another action</a></li>
-    <li><a class="dropdown-item" href="#">Something else here</a></li>
-    <li><hr class="dropdown-divider"/></li>
-    <li><a class="dropdown-item" href="#">Separated link</a></li>
+  <ul class="dropdown-menu">
+    ...
   </ul>
 </div>
-<div className="singlebutton"><button type="button"  class="btn btn-primary btn-sm"> <GroupAddIcon/> Primary</button> </div>
-         
-      </div>
-      <div className="content-tabs">
-        <div
-          className={toggleState === 1 ? "content  active-content" : "content"}
-        >
-          <h2>Content 1</h2>
-          <hr />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-            praesentium incidunt quia aspernatur quasi quidem facilis quo nihil
-            vel voluptatum?
-          </p>
-        </div>
-
-        <div
-          className={toggleState === 2 ? "content  active-content" : "content"}
-        >
-          <h2>Content 2</h2>
-          <hr />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-            voluptatum qui adipisci.
-          </p>
-        </div>
-
-        <div
-          className={toggleState === 3 ? "content  active-content" : "content"}
-        >
-          <h2>Content 3</h2>
-          <hr />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos sed
-            nostrum rerum laudantium totam unde adipisci incidunt modi alias!
-            Accusamus in quia odit aspernatur provident et ad vel distinctio
-            recusandae totam quidem repudiandae omnis veritatis nostrum
-            laboriosam architecto optio rem, dignissimos voluptatum beatae
-            aperiam voluptatem atque. Beatae rerum dolores sunt.
-          </p>
-        </div>
-        <div
-          className={toggleState === 4 ? "content  active-content" : "content"}
-        >
-          <h2>Content 4</h2>
-          <hr />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos sed
-            nostrum rerum laudantium totam unde adipisci incidunt modi alias!
-            Accusamus in quia odit aspernatur provident et ad vel distinctio
-            recusandae totam quidem repudiandae omnis veritatis nostrum
-            laboriosam architecto optio rem, dignissimos voluptatum beatae
-            aperiam voluptatem atque. Beatae rerum dolores sunt.
-          </p>
-        </div>
-        <div
-          className={toggleState === 5 ? "content  active-content" : "content"}
-        >
-          <h2>Content 5</h2>
-          <hr />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos sed
-            nostrum rerum laudantium totam unde adipisci incidunt modi alias!
-            Accusamus in quia odit aspernatur provident et ad vel distinctio
-            recusandae totam quidem repudiandae omnis veritatis nostrum
-            laboriosam architecto optio rem, dignissimos voluptatum beatae
-            aperiam voluptatem atque. Beatae rerum dolores sunt.
-          </p>
+            
+            <div className="singlebutton"><button type="button" data-toggle="collapse" class="btn btn-primary "> <GroupAddIcon /> Join A Group </button> </div>
+            
+          </div>
         </div>
       </div>
-
-
-
-
     </div>
-
-
-
-    /* <div className="PostLink">
-     <nav class="navbar navbar-expand-lg pl-md-5 ">
-        <div class="container" id="link">
-          <ul class="navbar-nav">
-            <li class="nav-item ">
-              <a class="nav-link" href="#">ALL POSTS(32)</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="##">ARTICLE</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="##">EVENT</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link "  href="##">EDUCATION</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="##">JOB</a>
-            </li>
-          </ul>
-        </div>
-      </nav> 
-      
-    </div>  */
-
-
-
-  )
+  );
 }
+
 
 
 export default Body;
