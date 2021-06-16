@@ -131,9 +131,16 @@
 
 
    .PostLink{
-    padding-left: 200px;
+    padding-left: 150px;
     padding-top: 3px;
    }
+
+
+.more {
+  justify-content: flex-end;
+  width: 200px;
+  padding-left: 40px;
+}
 
 
   #hello {
@@ -149,6 +156,12 @@
     border-top: 0px white!important;
   }
 
+  .profile{
+    padding-top: 10px;
+  }
+
+
+ 
 
   .feed {
     /* flex-direction: column; */
@@ -164,6 +177,9 @@
   }
 
 
+  
+
+
   .sideMenu {
     /* flex-direction: column; */
     width: 10vw;
@@ -171,7 +187,7 @@
 
 
   .row>* {
-    width: 70% !important;
+    width: 90% !important;
     flex: 1;
   }
 
