@@ -49,7 +49,7 @@ function Body() {
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum...
                       </Card.Text>
                       <div class="container">
-                      <div class="row row-2>
+                      <div class="row" >
                       <img src={Profile} className="profile" />
                       <h2>he</h2> </div> </div>
                     </Card.Body>
