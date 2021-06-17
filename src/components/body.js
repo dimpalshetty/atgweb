@@ -13,6 +13,7 @@ import Tabs from 'react-bootstrap/Tabs';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
+import MediaQuery from 'react-responsive'
 
 
 
@@ -28,18 +29,20 @@ function Body() {
         <div class="col col-auto" >
           <div className="feed">
             <div className="PostLink">
+            
               <Tabs
                 id="controlled-tab-example "
                 className="hello"
                 activeKey={key}
                 onSelect={(k) => setKey(k)}
               >
-                <Tab eventKey="home" title="All Posts(32)">
+               
+                <Tab eventKey="home" title="All Posts(32)" id="cards">
                   <br />
-                  <Card style={{ width: '40rem' }}>
+                  <Card className="postCard" style={{ width: '40rem', objectFit: 'cover' }}>
                     <Card.Img variant="top" src={Card1} />
                     <Card.Body>
-                      <Card.Title style={{ fontSize: 10 }}>✍️ Article</Card.Title>
+                      <Card.Title style={{ fontSize: 10 }}>✍️ Article </Card.Title>
                       <div class="row row-xs">
                         <div>
                           <Card.Title style={{ paddingTop: 5, width: 500, fontWeight: 700, }} >What if famous brands had regular fonts? Meet RegulaBrands!</Card.Title> </div>
@@ -50,14 +53,17 @@ function Body() {
                       </Card.Text>
                       <div class="container">
                       <div class="row" >
-                      <img src={Profile} className="profile" />
+                      {/* <img src={Profile} className="profile" /> */}
                       <h2>he</h2> </div> </div>
                     </Card.Body>
                   </Card>
+                  
                 </Tab>
-                <Tab eventKey="profile" title="Events">
+               
+                <Tab  className="All"  eventKey="profile" title="Events">
                   Hi
                 </Tab>
+
                 <Tab eventKey="articles" title="Articles">
                   Hi
                 </Tab>

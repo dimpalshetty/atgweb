@@ -161,6 +161,43 @@
   }
 
 
+  @media only screen and (max-width: 480px ) {
+
+    .btn-group{
+      display: none;
+    }
+
+    .btn-primary{
+      display: none;
+    }
+
+    .All {
+      display: none;
+      
+    }
+
+    .PostLink {
+      padding-left: 0px !important;
+
+     
+    }
+
+    .col-sm {
+      display: none;
+    }
+
+   
+
+   
+   
+
+    
+   
+     
+    
+  }
+
+
  
 
   .feed {
