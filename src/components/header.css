@@ -1,5 +1,5 @@
 .computerhead{
-    width: 100vw;
+    width: 98vw;
     height: 440px;
     flex: row;
     
@@ -57,7 +57,7 @@
 .black {
     background-color: black;
     margin-top: 10px;
-    width: 100vw;
+    width: 98vw;
     height: 440px;
 }
 
