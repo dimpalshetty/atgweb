@@ -9,13 +9,14 @@ import GroupAddIcon from '@material-ui/icons/GroupAdd';
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import useScript from '../useScript';
 import { Tab } from 'react-bootstrap';
+import Container from 'react-bootstrap/Container'
 import Tabs from 'react-bootstrap/Tabs';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
 import MediaQuery from 'react-responsive'
-
-
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 
 
@@ -23,81 +24,70 @@ function Body() {
   const [key, setKey] = useState('home');
 
   return (
-    <div class="container">
-      <div class="row">
 
-        <div class="col col-auto" >
-          <div className="feed">
-            <div className="PostLink">
-            
-              <Tabs
-                id="controlled-tab-example "
-                className="hello"
-                activeKey={key}
-                onSelect={(k) => setKey(k)}
-              >
-               
-                <Tab eventKey="home" title="All Posts(32)" id="cards">
-                  <br />
-                  <Card className="postCard" style={{ width: '40rem', objectFit: 'cover' }}>
-                    <Card.Img variant="top" src={Card1} />
-                    <Card.Body>
-                      <Card.Title style={{ fontSize: 10 }}>✍️ Article </Card.Title>
-                      <div class="row row-xs">
-                        <div>
-                          <Card.Title style={{ paddingTop: 5, width: 500, fontWeight: 700, }} >What if famous brands had regular fonts? Meet RegulaBrands!</Card.Title> </div>
-                        <div className="more"><MoreHorizIcon /></div>
-                      </div>
-                      <Card.Text style={{ fontSize: 15, color: "#5C5C5C" }}>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum...
-                      </Card.Text>
-                      <div class="container">
-                      <div class="row" >
-                      {/* <img src={Profile} className="profile" /> */}
-                      <h2>he</h2> </div> </div>
-                    </Card.Body>
-                  </Card>
-                  
-                </Tab>
-               
-                <Tab  className="All"  eventKey="profile" title="Events">
-                  Hi
-                </Tab>
+    <Container style={{ paddingLeft: 10 }}  >
+    <Row>
+    <Col>
+      <Tabs
+        id="controlled-tab"
+        style={{ flex: 1, }}
+        activeKey={key}
+        onSelect={(k) => setKey(k)}
+      >
 
-                <Tab eventKey="articles" title="Articles">
-                  Hi
-                </Tab>
-                <Tab eventKey="edu" title="Education">
-                  Hi
-                </Tab>
-                <Tab eventKey="job" title="Job">
-                  Hi
-                </Tab>
-              </Tabs>
+        <Tab tabClassName="ok" eventKey="home" title="All Posts(32)" >
+          <br />
+          <Card className="postCard" style={{ width: '40rem', objectFit: 'cover' }}>
+            <Card.Img variant="top" src={Card1} />
+            <Card.Body>
+              <Card.Title style={{ fontSize: 10 }}>✍️ Article </Card.Title>
+              <div class="row row-xs">
+                <div>
+                  <Card.Title style={{ paddingTop: 5, width: 500, fontWeight: 700, }} >What if famous brands had regular fonts? Meet RegulaBrands!</Card.Title> </div>
+                <div className="more"><MoreHorizIcon /></div>
+              </div>
+              <Card.Text style={{ fontSize: 15, color: "#5C5C5C" }}>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum...
+              </Card.Text>
+              <div class="container">
+                <div class="row" >
+                  {/* <img src={Profile} className="profile" /> */}
+                  <h2>he</h2> </div> </div>
+            </Card.Body>
+          </Card>
 
-            </div>
-          </div>
-        </div>
-        <div class="col-sm">
+        </Tab>
+    
 
-          <div class="row">
-            <div class="btn-group">
-              <button class="btn btn-light btn-block dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Write A Post
-              </button>
-              <ul class="dropdown-menu">
-                ...
-              </ul>
-            </div>
+        <Tab tabClassName="All" eventKey="profile" id="delete" title="Events">
+          Hi
+        </Tab>
 
-            <div className="singlebutton"><button type="button" data-toggle="collapse" class="btn btn-primary "> <GroupAddIcon /> Join A Group </button> </div>
+        <Tab tabClassName="All" eventKey="articles" title="Articles">
+          Hi
+        </Tab>
+        <Tab tabClassName="All" eventKey="edu" title="Education">
+          Hi
+        </Tab>
+        <Tab tabClassName="All" eventKey="job" title="Job">
+          Hi
+        </Tab>
 
-          </div>
-        </div>
-      </div>
-    </div>
+
+
+      </Tabs>
+    
+</Col>
+
+<Col className="coldissapear"> <h2>hi</h2></Col>
+      
+      </Row>
+    </Container>
+
   );
 }
+
+
 
 
 

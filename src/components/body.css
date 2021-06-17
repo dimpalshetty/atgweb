@@ -156,6 +156,9 @@
     border-top: 0px white!important;
   }
 
+
+  
+
   .profile{
     padding-top: 10px;
   }
@@ -176,6 +179,22 @@
       
     }
 
+  .ok {
+    font-size: 20px;
+    }
+
+    .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+
+      border-bottom: none !important;
+      border-right: none !important;
+      border-left: none !important;
+      border-top: none !important;
+      font-size: 20px;
+      color: black;
+      font-weight: 700;
+      padding-top: 10px;
+    }
+
     .PostLink {
       padding-left: 0px !important;
 
@@ -186,9 +205,13 @@
       display: none;
     }
 
-   
+   .coldissapear {
+     display: none;
+   }
 
-   
+   .delete {
+     display: none;
+   }
    
 
     
