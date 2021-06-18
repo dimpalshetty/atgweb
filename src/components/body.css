@@ -169,6 +169,11 @@
     color: #525252;
   }
 
+
+
+  .dropdown-toggle::after {
+    display:none;
+}
   #caret {
     display: none;
   }
@@ -222,10 +227,24 @@
      display: none;
    }
 
+   .location {
+     width: 20px;
+   }
+
+   .grid {
+     padding-top: 50;
+   }
    .delete {
      display: none;
    }
-   
+
+   .textfield {
+     width: 20;
+   }
+    
+   .dissapearButtons {
+     background-color: black !important;
+   }
 
     
    
