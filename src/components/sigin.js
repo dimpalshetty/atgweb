@@ -29,12 +29,11 @@ import FormHelperText from '@material-ui/core/FormHelperText';
 import FormControl from '@material-ui/core/FormControl';
 import Visibility from '@material-ui/icons/Visibility';
 import VisibilityOff from '@material-ui/icons/VisibilityOff';
-import SignIn from '../components/sigin';
 
 
 
 
-function Navbar() {
+function SignIn() {
 
 
 
@@ -64,51 +63,10 @@ function Navbar() {
     });
     return (
 
-        <nav class="navbar navbar-expand-md ">
-            <div class="container-fluid">
-                <div class="navbar-collapse collapse w-100 order-4 order-md-0 dual-collapse2">
-                    <img src={whole} className="icon" /> </div>
-
-                <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
-                    <div class="mx-auto order-0">
-                        <form class="form-inline  my-lg-0">
-
-                            <FaSistrix className="searchicon" />
-                            <input class="form-control mr-sm-2" type="search " placeholder="Search for your ATG Groups" aria-label="Search " />
-                        </form>
-                    </div>
-                </div>
-                <div class="navbar-collapse collapse w-100 order-3 dual-collapse2" id="links">
-                    <div class="navbar-nav ms-auto">
-
-                        <p className="para">Create Account. <a className="Dropdown" href="#" >
-
-
-
-                            <Dropdown>
-                                <Dropdown.Toggle style={{ fontWeight: 500, fontSize: 15 }} onClick={handleShow} variant="none" id="dropdown-basic">
-                                    It's Free <ArrowDropDownIcon />
-                                </Dropdown.Toggle>
-
-                                <Dropdown.Menu>
-                                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-    <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                                </Dropdown.Menu>
-                            </Dropdown>
-
-                        </a> </p>
-
-
-                    </div>
-
-
-
-                </div>
-            </div>
-
-            <Modal size="lg" show={show} onHide={handleClose} animation={false}>
+          
+<Modal size="lg" show={show} onHide={handleClose} animation={false}>
                 <Modal.Header closeButton>
-                    <Modal.Title style={{ fontSize: 14, color: '#008A45', justifyContent: 'center', textAlign: 'center', alignItems: 'center', paddingLeft: 30 }}>Let's learn, share & inspire each other with our passion for computer engineering. Sign up now 🤘🏼</Modal.Title>
+                    <Modal.Title style={{ fontSize: 14, color: '#008A45', justifyContent: 'center', textAlign: 'center', alignItems: 'center', paddingLeft: 30 }}>ji 🤘🏼</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
                     <Row>
@@ -206,12 +164,10 @@ function Navbar() {
                 </Modal.Body>
 
             </Modal>
-        </nav>
-
 
 
     )
 }
 
 
-export default Navbar;
+export default SignIn;

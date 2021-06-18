@@ -178,7 +178,16 @@
     display: none;
   }
 
+  .helpertext {
+    font: 12px sans-serif;
+    color: gray;
+    width: 20;
+  }
 
+  .loc {
+    color: #525252;
+    font-size: 8;
+  }
  
 
 
@@ -215,8 +224,14 @@
 
     .PostLink {
       padding-left: 0px !important;
+      width: 2;
 
      
+    }
+
+
+    .sarthak {
+   height: 0.05;
     }
 
     .col-sm {
@@ -231,6 +246,9 @@
      width: 20px;
    }
 
+
+   
+
    .grid {
      padding-top: 50;
    }
@@ -244,6 +262,10 @@
     
    .dissapearButtons {
      background-color: black !important;
+   }
+
+   .postCard {
+     width: 5 !important;
    }
 
     
