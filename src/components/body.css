@@ -188,6 +188,12 @@
     color: #525252;
     font-size: 8;
   }
+
+  .Fab {
+    display: none;
+  }
+
+  
  
 
 
@@ -264,8 +270,13 @@
      background-color: black !important;
    }
 
-   .postCard {
-     width: 5 !important;
+   .cardpic {
+     display: none;
+   }
+
+
+   .name {
+     display: none;
    }
 
     

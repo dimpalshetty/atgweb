@@ -35,13 +35,30 @@ import Grid from '@material-ui/core/Grid';
 import ErrorOutlineOutlinedIcon from '@material-ui/icons/ErrorOutlineOutlined';
 import CreateIcon from '@material-ui/icons/Create';
 import TodayIcon from '@material-ui/icons/Today';
+import EditIcon from '@material-ui/icons/Edit';
+import Fab from '@material-ui/core/Fab';
+import Box from '@material-ui/core/Box';
+
+
+
+const useStyles = makeStyles(theme => ({
+  fab: {
+    position: 'fixed',
+    bottom: theme.spacing(2),
+    right: theme.spacing(2),
+  },
+}));
+
+
 
 
 function Body() {
+  const classes = useStyles();
   const [key, setKey] = useState('home');
+  
 
   return (
-
+   
     <Container className="PostLink" style={{ paddingLeft: 40, paddingTop: 20 }}  >
       <Row>
         <Col>
@@ -54,10 +71,10 @@ function Body() {
 
             <Tab tabClassName="ok" eventKey="home" title="All Posts(32)" >
               <br />
-              <Card className="postCard" style={{ width: '40rem', objectFit: 'cover' }}>
-                <Card.Img variant="top" src={Card1} />
-                <Card.Body>
-                  <Card.Title style={{ paddingTop: 5, width: 480, fontWeight: 500, fontSize: 14, paddingLeft: 8 }}>✍️ Article </Card.Title>
+              <Card bsPrefix="postCard" style={{ width: '40rem', objectFit: 'cover' }}>
+                <Card.Img   variant="top" src={Card1} />
+                <Card.Body >
+                  <Card.Title  style={{ paddingTop: 5, width: 480, fontWeight: 500, fontSize: 14, paddingLeft: 8 }}>✍️ Article </Card.Title>
                   <Container>
                     <Row>
                       <Col lg={11}>
@@ -84,7 +101,7 @@ function Body() {
                   <Row style={{ justifyContent: 'space-between', paddingTop: 5 }}>
                     <Col lg={1} sm={1}>    <img className="sarthak" src={Profile} />
                     </Col>
-                    <Col lg={7} sm={1} style={{ alignItems: 'center', paddingTop: 8, fontWeight: 700, fontSize: 15 }}>Sarthak Kamra</Col>
+                    <Col  lg={7} sm={11} style={{ alignItems: 'center', paddingTop: 8, fontWeight: 700, fontSize: 15 }}>Sarthak Kamra</Col>
                     <Col md={{ span: 1, offset: 1 }}> </Col>
                     <Col lg={3} style={{ paddingTop: 5 }}><Row lg={1}><VisibilityIcon style={{ color: 'grey', marginRight: -30, paddingTop: 5, }} />
                       <p className="Views">1.4k Views</p></Row>
@@ -98,6 +115,8 @@ function Body() {
                   </Row>
                 </Card.Body>
               </Card>
+              
+           
 
               <br />
               <Card className="postCard" style={{ width: '40rem', objectFit: 'cover' }}>
@@ -314,6 +333,9 @@ function Body() {
 
 
       </Row>
+      <Box display={{ xs: 'block', md: 'none' }}>     <Fab  className={classes.fab} display="none" color="secondary" aria-label="edit">
+        <EditIcon />
+      </Fab> </Box>
     </Container>
 
   );
