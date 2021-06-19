@@ -14,6 +14,19 @@
 }
 
 
+.CS1 {
+    display: none;
+}
+
+.follow {
+    display: none;
+}
+
+
+.KeyboardBackspaceIcon{
+    display: none;
+}
+
 @media only screen and (max-width: 480px ) {
 
    
@@ -27,10 +40,12 @@
 
 
  }
-    
+
+
+
 
     .container-fluid {
-        padding-left: 0;
+        padding-left: 10 !important ;
     
     }
 
@@ -39,6 +54,21 @@
        left: 0 !important;
        top: 22vh !important;
        font-size: 20px !important;
+     
+       
+    }
+
+
+
+    .CS1 {
+        position: absolute;
+        text-align: left;
+       left: 0 !important;
+       top: 3vh !important;
+       font-size: 20px !important;
+       color: white;
+       display: block;
+     
        
     }
 
@@ -46,6 +76,34 @@
         left: 0px !important;
         font-size: 15px;
         top: 25vh !important;
+    }
+
+    .backarrow{ 
+        text-align: left;
+        left: 0 !important;
+        top: 22vh !important;
+        font-size: 20px !important;
+       
+    }
+
+    .del {
+        position: relative;
+        color: blue;
+        left: 0px !important;
+        font-size: 15px;
+        top: 25vh !important;
+        display: inline-block;
+        
+    }
+
+    .follow {
+        position: absolute;
+       left: 30vh ;
+       top: 3vh !important;
+       font-size: 30px !important;
+       color: white;
+       display: block;
+     
     }
 
     
@@ -70,6 +128,18 @@
     font-size: 42px;
 }
 
+
+
+.backarrow{ 
+    position: absolute;
+    color: blue;
+    
+    left: 200px;
+    bottom: 107px;
+    font-size: 42px;
+    display: none;
+}
+
 .info {
     color: white;
     top: 371px;
@@ -79,4 +149,6 @@
     font-family: IBM Plex Sans;
 
 }
+
+
 

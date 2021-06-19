@@ -38,6 +38,9 @@ import TodayIcon from '@material-ui/icons/Today';
 import EditIcon from '@material-ui/icons/Edit';
 import Fab from '@material-ui/core/Fab';
 import Box from '@material-ui/core/Box';
+import KeyboardBackspaceIcon from '@material-ui/icons/KeyboardBackspace';
+import TabPane from 'react-bootstrap/TabPane';
+import Nav from 'react-bootstrap/Nav'
 
 
 
@@ -55,13 +58,13 @@ const useStyles = makeStyles(theme => ({
 function Body() {
   const classes = useStyles();
   const [key, setKey] = useState('home');
-  
+
 
   return (
-   
+
     <Container className="PostLink" style={{ paddingLeft: 40, paddingTop: 20 }}  >
       <Row>
-        <Col>
+        <Col style={{ padding: 0 }}>
           <Tabs
             id="controlled-tab"
             style={{ flex: 1, }}
@@ -70,18 +73,19 @@ function Body() {
           >
 
             <Tab tabClassName="ok" eventKey="home" title="All Posts(32)" >
+            
               <br />
               <Card bsPrefix="postCard" style={{ width: '40rem', objectFit: 'cover' }}>
-                <Card.Img   variant="top" src={Card1} />
+                <Card.Img variant="top" src={Card1} />
                 <Card.Body >
-                  <Card.Title  style={{ paddingTop: 5, width: 480, fontWeight: 500, fontSize: 14, paddingLeft: 8 }}>✍️ Article </Card.Title>
+                  <Card.Title bsPrefix="cardtitle" style={{ paddingTop: 5, width: 480, fontWeight: 500, fontSize: 14, paddingLeft: 8 }}>✍️ Article </Card.Title>
                   <Container>
                     <Row>
-                      <Col lg={11}>
-                        <Card.Title style={{ paddingTop: 5, width: 500, fontWeight: 700, }} >What if famous brands had regular fonts? Meet RegulaBrands!</Card.Title>
+                      <Col lg={11} sm={11}>
+                        <Card.Title bsPrefix="CardHeading" style={{ paddingTop: 5, width: 500, fontWeight: 700, }} >What if famous brands had regular fonts? Meet RegulaBrands!</Card.Title>
                       </Col>
-                      <Col lg={1} >
-                        <Dropdown>
+                      <Col lg={1} sm={0.5} className="justify-content-sm-center" >
+                        <Dropdown bsPrefix="morecol ">
                           <Dropdown.Toggle className="buttons" variant="none" id="dropdown-basic">
                             <MoreHorizIcon />
                           </Dropdown.Toggle>
@@ -99,9 +103,9 @@ function Body() {
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum...
                   </Card.Text>
                   <Row style={{ justifyContent: 'space-between', paddingTop: 5 }}>
-                    <Col lg={1} sm={1}>    <img className="sarthak" src={Profile} />
+                    <Col lg={1} sm={1}>     <img className="sarthak" src={Profile} />
                     </Col>
-                    <Col  lg={7} sm={11} style={{ alignItems: 'center', paddingTop: 8, fontWeight: 700, fontSize: 15 }}>Sarthak Kamra</Col>
+                    <Col lg={7} sm={11} style={{ alignItems: 'center', paddingTop: 8, fontWeight: 700, fontSize: 15 }}>Sarthak Kamra</Col>
                     <Col md={{ span: 1, offset: 1 }}> </Col>
                     <Col lg={3} style={{ paddingTop: 5 }}><Row lg={1}><VisibilityIcon style={{ color: 'grey', marginRight: -30, paddingTop: 5, }} />
                       <p className="Views">1.4k Views</p></Row>
@@ -115,8 +119,8 @@ function Body() {
                   </Row>
                 </Card.Body>
               </Card>
-              
-           
+
+
 
               <br />
               <Card className="postCard" style={{ width: '40rem', objectFit: 'cover' }}>
@@ -128,19 +132,19 @@ function Body() {
                       <Col>
                         <Card.Title style={{ paddingTop: 5, width: 480, fontWeight: 700, }} >Tax Benefits for Investment under National Pension Scheme launched by Government</Card.Title>
                       </Col>
-                      <Col lg={1} ></Col>
-                      <Dropdown>
-                        <Dropdown.Toggle className="buttons" variant="none" id="dropdown-basic">
-                          <MoreHorizIcon />
-                        </Dropdown.Toggle>
+                      <Col lg={1}>
+                        <Dropdown>
+                          <Dropdown.Toggle className="buttons" variant="none" id="dropdown-basic">
+                            <MoreHorizIcon />
+                          </Dropdown.Toggle>
 
-                        <Dropdown.Menu>
-                          <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                          <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                          <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-                        </Dropdown.Menu>
-                      </Dropdown>
-                      <Col />
+                          <Dropdown.Menu>
+                            <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                            <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+                            <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                          </Dropdown.Menu>
+                        </Dropdown>
+                      </Col>
                     </Row>
                   </Container>
                   <Card.Text style={{ fontSize: 15, color: "#5C5C5C", paddingLeft: 15, overflow: 'hidden' }}>
@@ -166,7 +170,7 @@ function Body() {
               <Card className="postCard" style={{ width: '40rem', objectFit: 'cover' }}>
                 <Card.Img variant="top" src={Card3} />
                 <Card.Body>
-                  <Card.Title style={{ fontSize: 14,  fontWeight: 700, paddingLeft: 8 }}>📆 Meetup </Card.Title>
+                  <Card.Title style={{ fontSize: 14, fontWeight: 700, paddingLeft: 8 }}>📆 Meetup </Card.Title>
                   <Container>
                     <Row>
                       <Col>
@@ -218,9 +222,9 @@ function Body() {
               </Card>
               <br />
               <Card className="postCard" style={{ width: '40rem', objectFit: 'cover' }}>
-              
+
                 <Card.Body>
-                  <Card.Title style={{ fontSize: 14,  fontWeight: 700, paddingLeft: 8 }}>💼 Job </Card.Title>
+                  <Card.Title style={{ fontSize: 14, fontWeight: 700, paddingLeft: 8 }}>💼 Job </Card.Title>
                   <Container>
                     <Row>
                       <Col>
@@ -278,10 +282,23 @@ function Body() {
               Hi
             </Tab>
 
+           <Tab tabClassName="fil"  title="All Filters" variant="primary">
+              Hi 
+            </Tab> 
+            
+            
+                
+
+          
 
           </Tabs>
 
+       
+        
         </Col>
+
+       
+        
 
         <Col className="coldissapear">
           <Row>
@@ -333,7 +350,7 @@ function Body() {
 
 
       </Row>
-      <Box display={{ xs: 'block', md: 'none' }}>     <Fab  className={classes.fab} display="none" color="secondary" aria-label="edit">
+      <Box display={{ xs: 'block', sm: 'block' , lg: 'none'}}>     <Fab className={classes.fab} color="secondary" aria-label="edit">
         <EditIcon />
       </Fab> </Box>
     </Container>

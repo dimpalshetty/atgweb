@@ -1,133 +1,16 @@
-/* 
-.PostLink{
-    padding-left: 200px;
 
 
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    width: 100%;
-  height: 300px;
+
+
+  
+  
+   
+
+
+
+
+
  
-}
-
-
-
-.tabs {
-
-    padding-top: 20px;
-    padding-bottom: 10px;
-        width: 10%;
-        text-align: center;
-    cursor: pointer;
-    text-decoration: none;
-   
-    
- 
-    outline: none;
-  }
-
-  .active-tabs  {
-    border-bottom: 2px solid black;
-
-    
-  }
-
-
-  .active-tabs::before {
-    content: "";
-   
-    position: absolute;
-
-    left: 50%;
-    
-    width: calc(100% + 1px);
-    height: 5px;
-    
-  }
-
-  .content-tabs {
-    flex-grow : 1;
-    width: 60%;
-   
-  }
-  .content {
-    background: white;
-    padding: 20px;
-    width: 100%;
-    height: 100%;
-    display: none;
-    overflow-y: hidden;
-  }
-  .content h2 {
-    padding: 0px 0 5px 0px;
-  }
-
-@media only screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;
-  }
-}
-
-  .content hr {
-    width: 80%;
-    height: 2px;
-    background: #222;
-    margin-bottom: 5px;
-    position: absolute;
-    top: 45px;
-  }
-  .content p {
-    width: 100%;
-    height: 100%;
-  }
-  .active-content {
-    display: block;
-  }
-
-  .singlebutton {
-      padding-top: 10px;
-      padding-bottom: 20px;
-      padding-left: 30px;
-  }
-
-  .btn-group{
-      padding-left: 10%;
-      padding-top: 10px;
-      padding-bottom: 20px;
-  }
-
-.bloc-tabs {
-    display: flex;
-    width: 100%
-  }
-.nav-link {
-    color: black !important; 
-   
-}
-
-
-
-  
-
-.active a {
-
-    background-color: green !important;
-  
-
-  }
-
-
-
-  
-  
-   
-
-
-
-
-
-   */
 
 
    .PostLink{
@@ -154,6 +37,11 @@
     border-right: 0px white!important;
     border-left: 0px white!important;
     border-top: 0px white!important;
+  }
+
+
+  .filter {
+    background-color: blue;
   }
 
 
@@ -189,10 +77,17 @@
     font-size: 8;
   }
 
-  .Fab {
+  
+
+  .cardtitle {
+    width: 300;
+  }
+  
+
+
+  .fil{
     display: none;
   }
-
   
  
 
@@ -203,14 +98,32 @@
       display: none;
     }
 
+    .cardtitle {
+      width: 300;
+    }
+
     .btn-primary{
       display: none;
+    }
+.morecol{
+  justify-content: center!important;
+}
+
+    .CardHeading {
+      width: 320px !important;
     }
 
     .All {
       display: none;
       
     }
+
+    .fil{
+      display: block;
+    }
+    
+
+    
 
   .ok {
     font-size: 20px;
@@ -230,7 +143,7 @@
 
     .PostLink {
       padding-left: 0px !important;
-      width: 2;
+      
 
      
     }

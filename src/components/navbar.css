@@ -53,8 +53,14 @@
 
 }
 
+.Dropdown {
+    padding-bottom: 100;
+    top: 12;
+}
+
 .para {
     padding-top: 150;
+    font-size: 8;
 }
 
 @media only screen and (min-width : 480px) {

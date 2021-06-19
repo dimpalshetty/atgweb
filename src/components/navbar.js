@@ -30,6 +30,7 @@ import FormControl from '@material-ui/core/FormControl';
 import Visibility from '@material-ui/icons/Visibility';
 import VisibilityOff from '@material-ui/icons/VisibilityOff';
 import SignIn from '../components/sigin';
+import KeyboardBackspaceIcon from '@material-ui/icons/KeyboardBackspace';
 
 
 
@@ -81,12 +82,12 @@ function Navbar() {
                 <div class="navbar-collapse collapse w-100 order-3 dual-collapse2" id="links">
                     <div class="navbar-nav ms-auto">
 
-                        <p className="para">Create Account. <a className="Dropdown" href="#" >
+                       <p className="para">Create Account. </p>  <a className="Dropdown" href="#" >
 
 
 
                             <Dropdown>
-                                <Dropdown.Toggle style={{ fontWeight: 500, fontSize: 15 }} onClick={handleShow} variant="none" id="dropdown-basic">
+                                <Dropdown.Toggle style={{ fontWeight: 500, fontSize: 15, marginBottom:10  }} onClick={handleShow} variant="none" id="dropdown-basic">
                                     It's Free <ArrowDropDownIcon />
                                 </Dropdown.Toggle>
 
@@ -96,7 +97,7 @@ function Navbar() {
                                 </Dropdown.Menu>
                             </Dropdown>
 
-                        </a> </p>
+                        </a> 
 
 
                     </div>
