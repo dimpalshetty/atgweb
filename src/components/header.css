@@ -27,6 +27,54 @@
     display: none;
 }
 
+
+@media only screen and (max-width: 646px) {
+
+  
+
+    .CS {
+        text-align: left;
+       left: 0 !important;
+       top: 60vh !important;
+       font-size: 40px !important;
+     
+       
+    }
+
+    .info{ 
+        left: 0px !important;
+        font-size: 15px;
+        top: 70vh !important;
+    }
+
+    .follow {
+        position: absolute;
+       left: 80vh ;
+       top: 5vh !important;
+       font-size: 30px !important;
+       color: white;
+       display: block;
+     
+    }
+
+    .CS1 {
+        position: absolute;
+        text-align: left;
+       left: 4vw !important;
+       top: 7vh !important;
+       font-size: 20px !important;
+       color: white;
+       display: block;
+     
+       
+    }
+
+    
+
+
+
+  }
+
 @media only screen and (max-width: 480px ) {
 
    
@@ -56,6 +104,12 @@
        font-size: 20px !important;
      
        
+    }
+
+    .info{ 
+        left: 0px !important;
+        font-size: 15px;
+        top: 25vh !important;
     }
 
 

@@ -43,9 +43,12 @@
 
 }
 #links {
-    padding-top: 15px;
+    padding-top: 20px;
     padding-right: 15px;
 }
+
+
+
 
 .navbar-collapse.collapse.w-100.order-3.dual-collapse2{
     justify-content: center;
@@ -59,7 +62,7 @@
 }
 
 .para {
-    padding-top: 150;
+    padding-top: 2000;
     font-size: 8;
 }
 

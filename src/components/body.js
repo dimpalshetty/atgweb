@@ -63,8 +63,12 @@ function Body() {
   return (
 
     <Container className="PostLink" style={{ paddingLeft: 40, paddingTop: 20 }}  >
+   
       <Row>
+
         <Col style={{ padding: 0 }}>
+
+        
           <Tabs
             id="controlled-tab"
             style={{ flex: 1, }}
@@ -282,17 +286,18 @@ function Body() {
               Hi
             </Tab>
 
-           <Tab tabClassName="fil"  title="All Filters" variant="primary">
+           {/* <Tab tabClassName="fil"  title="All Filters" variant="primary">
               Hi 
             </Tab> 
-            
+             */}
             
                 
 
           
 
           </Tabs>
-
+         
+         
        
         
         </Col>
@@ -350,9 +355,10 @@ function Body() {
 
 
       </Row>
-      <Box display={{ xs: 'block', sm: 'block' , lg: 'none'}}>     <Fab className={classes.fab} color="secondary" aria-label="edit">
+      <Box display={{ xs: 'block', sm: 'block' , lg: 'none', md:'none'}}>     <Fab className={classes.fab} color="secondary" aria-label="edit">
         <EditIcon />
       </Fab> </Box>
+      
     </Container>
 
   );
