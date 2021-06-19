@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/atgweb/static/css/main.127f0bd2.chunk.css",
+    "main.js": "/atgweb/static/js/main.6d1ad64e.chunk.js",
+    "main.js.map": "/atgweb/static/js/main.6d1ad64e.chunk.js.map",
+    "runtime-main.js": "/atgweb/static/js/runtime-main.f5ce83b1.js",
+    "runtime-main.js.map": "/atgweb/static/js/runtime-main.f5ce83b1.js.map",
+    "static/css/2.4c97ca4f.chunk.css": "/atgweb/static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.51b52334.chunk.js": "/atgweb/static/js/2.51b52334.chunk.js",
+    "static/js/2.51b52334.chunk.js.map": "/atgweb/static/js/2.51b52334.chunk.js.map",
+    "index.html": "/atgweb/index.html",
+    "static/css/2.4c97ca4f.chunk.css.map": "/atgweb/static/css/2.4c97ca4f.chunk.css.map",
+    "static/css/main.127f0bd2.chunk.css.map": "/atgweb/static/css/main.127f0bd2.chunk.css.map",
+    "static/js/2.51b52334.chunk.js.LICENSE.txt": "/atgweb/static/js/2.51b52334.chunk.js.LICENSE.txt",
+    "static/media/atg.90d204b9.png": "/atgweb/static/media/atg.90d204b9.png",
+    "static/media/card1.f1966940.png": "/atgweb/static/media/card1.f1966940.png",
+    "static/media/card2.ec5b1e35.png": "/atgweb/static/media/card2.ec5b1e35.png",
+    "static/media/card3.b28b39ba.png": "/atgweb/static/media/card3.b28b39ba.png",
+    "static/media/header.215f195b.png": "/atgweb/static/media/header.215f195b.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f5ce83b1.js",
+    "static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.51b52334.chunk.js",
+    "static/css/main.127f0bd2.chunk.css",
+    "static/js/main.6d1ad64e.chunk.js"
+  ]
+}
